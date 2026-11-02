@@ -1,0 +1,19 @@
+[workspace]
+resolver = "2"
+members = ["crates/proxy-protocol", "crates/proxy-runtime", "crates/telegram-proxy"]
+
+[workspace.package]
+edition = "2021"
+license = "MIT"
+
+[workspace.dependencies]
+tokio = { version = "=1.43.0", features = ["rt-multi-thread", "macros", "net", "io-util", "signal", "time", "sync"] }
+futures-util = "=0.3.31"
+tokio-tungstenite = { version = "=0.24.0", default-features = false, features = ["connect", "handshake", "stream", "rustls-tls-webpki-roots"] }
+serde = { version = "=1.0.217", features = ["derive"] }
+serde_json = "=1.0.138"
+tracing = "=0.1.41"
+tracing-subscriber = { version = "=0.3.19", features = ["env-filter", "fmt"] }
+thiserror = "=1.0.69"
+rand = "=0.8.5"
+hex = "=0.4.3"

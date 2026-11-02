@@ -1,0 +1,6 @@
+/target/
+/dist/
+*.log
+*.tmp
+config.json
+TelegramProxy_data/
