@@ -1,0 +1,10 @@
+{
+  "listen_ip": "127.0.0.1",
+  "listen_port": 1443,
+  "secret": "",
+  "connect_timeout_secs": 10,
+  "enable_tcp_fallback": true,
+  "worker_domains": [],
+  "cloudflare_domains": [],
+  "dc_ips": {}
+}
